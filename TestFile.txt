@@ -1,0 +1,18 @@
+$HTTP["host"] =~ "(^|\.)nixcraft\.com$" {
+	server.document-root = "/home/Domains/ericswetts.com/http"
+	server.errorlog = "/var/log/lighttpd/Domains/ericswetts.com/error.log"
+	accesslog.filename = "/var/log/lighttpd/Domains/ericswetts.com/access.log"
+	server.error-handler-404 = "/e404.php"
+}
+$HTTP["host"] =~ "(^|\.)ericswetts\.com" {
+	server.document-root = "/home/Domains/ericswetts.com/http"
+	server.errorlog = "/var/log/lighttpd/Domains/ericswetts.com/error.log"
+	accesslog.filename = "/var/log/lighttpd/Domains/ericswetts.com/access.log"
+	server.error-handler-404 = "/e404.php"
+}
+$HTTP["host"] =~ "(^|\.)derp\.com" {
+	server.document-root = "/home/Domains/ericswetts.com/http"
+	server.errorlog = "/var/log/lighttpd/Domains/ericswetts.com/error.log"
+	accesslog.filename = "/var/log/lighttpd/Domains/ericswetts.com/access.log"
+	server.error-handler-404 = "/e404.php"
+}
